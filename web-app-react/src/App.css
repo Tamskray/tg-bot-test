@@ -1,0 +1,44 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.card {
+  padding: 2em;
+}
+
+.add-cost-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.add-cost-btn {
+  background-color: #46b325;
+  width: 70%;
+  align-self: center;
+  margin-top: 1.5em;
+}
+
+input {
+  padding: 8px;
+}
+
+.error-message {
+  color: rgb(199, 25, 25);
+  font-weight: 700;
+}
+
+li {
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+.delete-btn {
+  padding: 5px;
+  font-size: 10px;
+  margin-left: 10px;
+  background-color: #2e7bd3;
+}
