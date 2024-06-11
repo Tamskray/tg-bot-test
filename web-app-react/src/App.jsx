@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import "./App.css";
-import AddExpense from "./components/AddExpense";
+import AddExpense from "./components/Expenses/AddExpense";
+import ExpensesListContainer from "./components/Expenses/ExpensesListContainer.jsx";
 const tg = window.Telegram.WebApp;
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
     <>
       <h1>Telegram web app</h1>
 
-      <AddExpense />
+      <ExpensesListContainer />
 
       <div className="card">
         <button onClick={onClose}>Close Mini App</button>
