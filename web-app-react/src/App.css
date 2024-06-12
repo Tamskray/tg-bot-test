@@ -31,14 +31,57 @@ input {
   font-weight: 700;
 }
 
-li {
-  margin-bottom: 10px;
-  list-style: none;
-}
-
 .delete-btn {
   padding: 5px;
-  font-size: 10px;
+  font-size: 15px;
   margin-left: 10px;
-  background-color: #2e7bd3;
+  background-color: #7fa7d6;
+  border-radius: 5px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.expense-item {
+  padding: 10px;
+  margin: 0 0 10px 0;
+  border: 2px solid #c7c6c6;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eee;
+}
+
+.modal-overlay {
+  height: 100vh;
+  overscroll-behavior: none;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+}
+
+.modal-content {
+  background-color: white;
+  color: black;
+  max-width: 36rem;
+  width: 100%;
+  padding: 1.25rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.noscroll {
+  position: fixed;
+  overflow-y: scroll;
+  width: 100%;
 }
